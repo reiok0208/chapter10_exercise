@@ -10,7 +10,6 @@ a {
 main{
   width: 960px;
   margin: 50px 10px;
-  background-color: red;
 }
 
 .blog-item:nth-child(3n){
@@ -60,4 +59,37 @@ p{
   color: white;
   text-align: center;
   padding-top: 2px
+}
+
+@media screen and (max-width:425px) {
+  main{
+    width: 90%;
+  }
+
+  .blog-item:nth-child(3n){
+    width: 90%;
+    clear: both;
+    margin: 0 0 50px 25px;
+  }
+
+  .blog-item:nth-child(1){
+    width: 90%;
+    clear: both;
+    margin: 0 0 20px 25px;
+  }
+
+  .blog-item:nth-child(2){
+    width: 90%;
+    clear: both;
+    margin: 0 0 20px 25px;
+  }
+
+  .blog-item:nth-child(3){
+  }
+
+  img{
+    width: 94%;
+  }
+
+
 }
