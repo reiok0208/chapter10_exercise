@@ -61,27 +61,27 @@ p{
   padding-top: 2px
 }
 
-@media screen and (max-width:425px) {
+@media screen and (max-width:768px) {
   main{
-    width: 90%;
+    width: 100%;
   }
 
   .blog-item:nth-child(3n){
     width: 90%;
     clear: both;
-    margin: 0 0 50px 25px;
+    margin: 0 0 50px 10px;
   }
 
   .blog-item:nth-child(1){
     width: 90%;
     clear: both;
-    margin: 0 0 20px 25px;
+    margin: 0 0 20px 10px;
   }
 
   .blog-item:nth-child(2){
     width: 90%;
     clear: both;
-    margin: 0 0 20px 25px;
+    margin: 0 0 20px 10px;
   }
 
   .blog-item:nth-child(3){
