@@ -7,7 +7,13 @@ a {
   text-decoration: none;
 }
 
-main{
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.blog-main{
   width: 960px;
   margin: 50px 10px;
 }
@@ -38,8 +44,27 @@ main{
 .blog-item:nth-child(3){
 }
 
-img{
+.blog-img1{
+  background-image: url(img/flow01.png);
+  background-size: cover;
   width: 280px;
+  height: 200px;
+  margin: 10px 10px 10px 10px;
+}
+
+.blog-img2{
+  background-image: url(img/flow02.png);
+  background-size: cover;
+  width: 280px;
+  height: 200px;
+  margin: 10px 10px 10px 10px;
+}
+
+.blog-img3{
+  background-image: url(img/flow03.png);
+  background-size: cover;
+  width: 280px;
+  height: 200px;
   margin: 10px 10px 10px 10px;
 }
 
@@ -62,24 +87,28 @@ p{
 }
 
 @media screen and (max-width:768px) {
-  main{
+  .blog-main{
     width: 100%;
+    height: 100%;
   }
 
   .blog-item:nth-child(3n){
     width: 90%;
+    height: 90%;
     clear: both;
     margin: 0 0 50px 10px;
   }
 
   .blog-item:nth-child(1){
     width: 90%;
+    height: 90%;
     clear: both;
     margin: 0 0 20px 10px;
   }
 
   .blog-item:nth-child(2){
     width: 90%;
+    height: 90%;
     clear: both;
     margin: 0 0 20px 10px;
   }
@@ -87,8 +116,21 @@ p{
   .blog-item:nth-child(3){
   }
 
-  img{
-    width: 94%;
+
+  .blog-img1{
+    background-size: cover;
+    background-position: bottom;
+    width: 95%;
+  }
+  .blog-img2{
+    background-size: cover;
+    background-position: bottom;
+    width: 95%;
+  }
+  .blog-img3{
+    background-size: cover;
+    background-position: bottom;
+    width: 95%;
   }
 
 }
